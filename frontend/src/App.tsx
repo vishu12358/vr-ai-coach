@@ -1,16 +1,18 @@
 import Navbar from "./assets/components/layout/Navbar";
-import Hero from "./assets/components/home/Hero";
-import Features from "./assets/components/home/Feature";
 import Footer from "./assets/components/layout/Footer";
+import AppRouter from "./routes/AppRouter";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Hero />
-      <Features />
+
+      <main className="flex-1">
+        <AppRouter />
+      </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
 

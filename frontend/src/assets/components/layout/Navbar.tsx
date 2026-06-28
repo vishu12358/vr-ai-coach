@@ -6,14 +6,12 @@ export default function Navbar() {
       </h1>
 
       <div className="hidden md:flex gap-8 text-slate-300">
-        <a href="#" className="hover:text-white">Home</a>
-        <a href="#" className="hover:text-white">Features</a>
-        <a href="#" className="hover:text-white">About</a>
+        <a href="/" className="hover:text-white">Home</a>
+        <a href="#features" className="hover:text-white">Features</a>
+        <a href="#about" className="hover:text-white">About</a>
       </div>
 
-      <button className="rounded-lg bg-blue-600 px-5 py-2 hover:bg-blue-700">
-        Login
-      </button>
+      <a href="/login" className="rounded-lg bg-blue-600 px-5 py-2 hover:bg-blue-700">Login</a>
     </nav>
   );
 }
